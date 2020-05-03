@@ -4,7 +4,7 @@
 
 
 ```jsx
-state= {term: ""}                         // we can get the value of input and put it in our state so we can use it 
+state= { term: "" }                         // we can get the value of input and put it in our state so we can use it 
 
 onFormSubmit = (event) => {
  event.preventDefault()                   // the default of a form when pressing enter is to send it to the back-end; we don't want this
