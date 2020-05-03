@@ -40,3 +40,30 @@ render() {
 <br>
 <img src="https://miro.medium.com/max/790/0*Xzkw0-T4Uea3d5Yh.png" height=250 width=400>
 <br>
+<br>
+parent
+
+```jsx
+class App extends Component {
+ onSearchSubmit(term) {                            // we're using this with params from child
+  console.log(term)
+ }
+ 
+ render(){
+  return (
+   <SeachBar onTermSubmit={this.onSearchSubmit}/>   // passing a function to child
+  )
+ }
+}
+```
+
+<br<
+child
+
+```jsx
+class SearchBar extends Component {
+ onFormSubmit = (event) => {
+  this.props.onSubmit(this.state.term)              // using the function from <App/> 
+ }
+}
+```
