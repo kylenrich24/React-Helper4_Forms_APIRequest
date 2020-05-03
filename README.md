@@ -28,4 +28,15 @@ render() {
  )
 }
 ```
+<br>
+<br>
 
+<h2>🌀 Communicating Child to Parent</h2>
+<br>
+<br>
+
+&nbsp;🌀&nbsp; We can use functions from our parent components- ie passing the function as a prop to a child component<br>
+&nbsp;🌀&nbsp; The child calls the function with its parameters - it's kinda like we're giving these params to the parent because the function is in the parent<br>
+<br>
+<img src="https://miro.medium.com/max/790/0*Xzkw0-T4Uea3d5Yh.png" height=200 width=400>
+<br>
