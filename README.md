@@ -90,3 +90,27 @@ class App extends Component {
   }
 ```
 
+<br>
+<h3>Custom Axios</h3>
+
+```javascript
+export default axios.create({
+  baseURL: "https://api.unsplash.com",
+  headers: {
+    Authorization: "Client-ID GVPUTGuZmt1i8j3qxJxOkSCumkzUljNYvUIyYPXFkbg",
+  },
+});
+
+
+```jsx
+ onSearchSubmit = async (term) => {
+    const response = await unsplash.get("/search/photos", {     // customized axios(unsplash)
+      params: { query: term },
+    });
+
+    this.setState({ images: response.data.results });
+  };
+```
+
+```
+
