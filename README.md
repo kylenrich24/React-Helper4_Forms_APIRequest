@@ -45,7 +45,7 @@ parent
 
 ```jsx
 class App extends Component {
- onSearchSubmit(term) {                            // we're using this with params from child
+ onSearchSubmit = (term) => {                        // we're using this with params from child
   console.log(term)
  }
  
@@ -80,7 +80,7 @@ class SearchBar extends Component {
 
 ```jsx
 class App extends Component {
-  async onSearchSubmit(term) {
+   onSearchSubmit = async (term) => {
     const response = await axios.get("https://api.unsplash.com/search/photos", {
       params: { query: term },
       headers: {
