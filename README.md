@@ -1,68 +1,141 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌀 React-Helper4_Forms_APIRequest 🌀
 
-## Available Scripts
+<img src="https://sunscrapers.com/blog/wp-content/uploads/2018/11/1__DOHv30w-0eI-Ysz5U47Yg.png" height=500 width=900>
 
-In the project directory, you can run:
 
-### `npm start`
+<h2>🌀 Components</h2>
+<br>
+ <img src="https://www.techdiagonal.com/wp-content/uploads/2019/08/React-components-blog-image.jpg" height=350 width=350> 
+<br>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3>Three Tenets of Components</h3>
+&nbsp; 🌀 &nbsp; <strong>Nesting</strong> - a component can be shown inside of another <br>
+&nbsp; 🌀 &nbsp; <strong>Reusability</strong> - we want to make components that can easily be reused through out our application <br>
+&nbsp; 🌀 &nbsp; <strong>Configuration</strong> - we should be able to configure a component when it is created <br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br>
+<br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Functional Component</h3>
+<br>
+To generate a functional component in VSCode: <em>rafce</em>
+<br>
+<br>
+CommentDetail Component:
 
-### `npm run build`
+```jsx
+import React from 'react'
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+const CommentDetail = () => {
+    return (      // functional component always have a return 
+        <div>     // it returns JSX
+            
+        </div>
+    )
+}
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+export default CommentDetail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+<br>
+<h3>Reusable and Nesting Component</h3>
+<br>
 
-### `npm run eject`
+```jsx
+import CommentDetail from './CommentDetail'
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+const App = () => {
+ return (
+  <div>
+    <CommentDetail />  // our component
+    <CommentDetail />
+    <CommentDetail />
+  <div>
+ )
+}
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export default App
+```
+<br>
+<br>
+<h2>Props System</h2>
+<br>
+&nbsp; 🌀 &nbsp; System for passing data from a parent to a child<br>
+&nbsp; 🌀 &nbsp; Configures and customizes child components<br>
+<br>
+<br>
+<img src="https://www.techdiagonal.com/wp-content/uploads/2019/09/react-props-blog-image-design-2.jpg" height=350 width=350> 
+<br>
+<h3>Passing and Receiving Props</h3>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Passing props 
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```jsx
+const App = () => {
+ return (
+  <div>
+    <CommentDetail author="Sam" picture="url1"/>  // passing props
+    <CommentDetail author="Bob" picture="url2"/>
+    <CommentDetail author="John" picture="url3"/>
+  <div>
+ )
+}
+```
+<br>
+Receiving props 
+<br>
+<br>
 
-## Learn More
+```jsx
+const CommentDetail = (props) => {
+ return (
+  <div>
+   <div>
+    <img src={props.picture}>  // props
+   </div>
+    <h1>{props.author}</h1>  // props
+  <div>
+ )
+}
+```
+<br>
+<h3>Children Props</h3>
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+return (
+ <ApprovalCard>
+  <CommentDetail />
+ </ApprovalCard/>
+ <ApprovalCard>
+  Hello There!
+ </ApprovalCard/>
+)
+```
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```jsx
+const ApprovalCard = (props) => {
+  return (
+    <div>
+      {props.children}   // children here
+      <div>
+        <button>Click Me</button>
+      </div>
+    </div>
+  );
+};
+```
+<br>
+<h3>Default Props</h3>
+<br>
 
-### Code Splitting
+```jsx
+App.defaultProps = {
+ message: "loading..."
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
