@@ -69,3 +69,10 @@ class SearchBar extends Component {
  }
 }
 ```
+<br>
+<br>
+
+<h2>🌀 Making API/AJAX Request</h2>
+<br>
+&nbsp;🌀&nbsp; AXIOS - third party package<br>
+&nbsp;🌀&nbsp; fetch - built in in browsers<br>
