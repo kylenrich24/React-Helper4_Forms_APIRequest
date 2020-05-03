@@ -94,7 +94,7 @@ class App extends Component {
 <h3>Custom Axios</h3>
 
 ```javascript
-export default axios.create({
+export default axios.create({                                                // custom axios to unsplash
   baseURL: "https://api.unsplash.com",
   headers: {
     Authorization: "Client-ID GVPUTGuZmt1i8j3qxJxOkSCumkzUljNYvUIyYPXFkbg",
