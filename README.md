@@ -1,7 +1,12 @@
 # 🌀 React-Helper4_Forms_APIRequest 🌀
 
 <img src="https://sunscrapers.com/blog/wp-content/uploads/2018/11/1__DOHv30w-0eI-Ysz5U47Yg.png" height=500 width=900>
+<br>
+<br>
 
+<h2>🌀 Controlled Elements</h2>
+<br>
+We handle user input by controlling elements
 
 ```jsx
 state = { term: "" }                         // we can get the value of input and put it in our state so we can use it 
