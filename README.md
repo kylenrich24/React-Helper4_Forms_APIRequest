@@ -58,7 +58,8 @@ class App extends Component {
 ```
 
 <br>
-child<br>
+child
+<br>
 
 ```jsx
 class SearchBar extends Component {
