@@ -101,6 +101,7 @@ export default axios.create({
   },
 });
 
+<br>
 
 ```jsx
  onSearchSubmit = async (term) => {
@@ -112,5 +113,5 @@ export default axios.create({
   };
 ```
 
-```
+
 
