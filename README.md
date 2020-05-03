@@ -76,3 +76,17 @@ class SearchBar extends Component {
 <br>
 &nbsp;🌀&nbsp; AXIOS - third party package<br>
 &nbsp;🌀&nbsp; fetch - built in in browsers<br>
+<br>
+
+```jsx
+class App extends Component {
+  async onSearchSubmit(term) {
+    const response = await axios.get("https://api.unsplash.com/search/photos", {
+      params: { query: term },
+      headers: {
+        Authorization: "Client-ID GVPUTGuZmt1i8j3qxJxOkSCumkzUljNYvUIyYPXFkbg",
+      },
+    });
+  }
+```
+
