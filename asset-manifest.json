@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Helper4_Forms_APIRequest/static/css/main.c11a3498.chunk.css",
+    "main.js": "/React-Helper4_Forms_APIRequest/static/js/main.b05a9480.chunk.js",
+    "main.js.map": "/React-Helper4_Forms_APIRequest/static/js/main.b05a9480.chunk.js.map",
+    "runtime-main.js": "/React-Helper4_Forms_APIRequest/static/js/runtime-main.f854aa89.js",
+    "runtime-main.js.map": "/React-Helper4_Forms_APIRequest/static/js/runtime-main.f854aa89.js.map",
+    "static/js/2.b042701d.chunk.js": "/React-Helper4_Forms_APIRequest/static/js/2.b042701d.chunk.js",
+    "static/js/2.b042701d.chunk.js.map": "/React-Helper4_Forms_APIRequest/static/js/2.b042701d.chunk.js.map",
+    "index.html": "/React-Helper4_Forms_APIRequest/index.html",
+    "precache-manifest.53f1399268436b7c2c6b576a5cbe081c.js": "/React-Helper4_Forms_APIRequest/precache-manifest.53f1399268436b7c2c6b576a5cbe081c.js",
+    "service-worker.js": "/React-Helper4_Forms_APIRequest/service-worker.js",
+    "static/css/main.c11a3498.chunk.css.map": "/React-Helper4_Forms_APIRequest/static/css/main.c11a3498.chunk.css.map",
+    "static/js/2.b042701d.chunk.js.LICENSE.txt": "/React-Helper4_Forms_APIRequest/static/js/2.b042701d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f854aa89.js",
+    "static/js/2.b042701d.chunk.js",
+    "static/css/main.c11a3498.chunk.css",
+    "static/js/main.b05a9480.chunk.js"
+  ]
+}
